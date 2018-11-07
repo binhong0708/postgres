@@ -29,4 +29,4 @@ netplan apply
 
 整个配置过程如下图:
 
-![set fix ip](.\images\20181107_01_set_fix_ip.jpg)
+![set fix ip](./images/20181107_01_set_fix_ip.jpg)
