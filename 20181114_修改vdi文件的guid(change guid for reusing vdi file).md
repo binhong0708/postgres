@@ -2,7 +2,7 @@ Step1. Copy VDI file from “D:\VirtualBox
 VMs\master_mysql_server\ master_mysql_server.vdi” to “D:\software\Linux” ,and
 rename file to “slave1_mysql_server.vdi”
 
-![1_path](.\images\20181114\1_path.png)
+![1_path](.\images\20181114\1_path.jpg)
 
 
 
