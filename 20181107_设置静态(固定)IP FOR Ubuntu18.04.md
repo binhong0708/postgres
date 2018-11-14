@@ -8,14 +8,15 @@
 ```shell
 network:
     version: 2
-    renderer: networkd
+    
     ethernets:
-        enp3s0:
-            dhcp4: no
+        enp0s8:
+            dhcp4: false
+            dhcp6: false                        
             addresses: [10.86.16.50/24]
-            gateway4:  192.168.1.1
+            gateway4:  10.86.16.1
             nameservers:
-                addresses: [8.8.8.8, 114.114.114.114]
+                addresses: [114.114.114.114, 8.8.8.8]
 ```
 
 
@@ -30,3 +31,27 @@ netplan apply
 整个配置过程如下图:
 
 ![set fix ip](./images/20181107_01_set_fix_ip.jpg)
+
+
+
+其中，gateway可以通过以下命令获得
+
+```shell
+route -n
+```
+![route n](./images/route_n.jpg)
+
+
+
+nameservers:可以不填，默认使用主机的dns,或者填[114.114.114.114, 8.8.8.8]都可以。
+
+也可以通过以下命令得到自身的dns:
+
+```shell
+cat /etc/resolv.conf
+```
+
+
+
+
+
