@@ -4,6 +4,7 @@
 因为Ubuntu18.04采用的是netplan来管理network。所以可以在/etc/netplan/目录下创建 
 一个以yaml结尾的文件。比如01-network-manager-all.yaml文件。 
 文件内容如下:
+addresses后面的/22或者/24，是子网掩码转换为二进制后1的个数。具体的换算如下如:255.255.252.0==>11111111.11111111.11111100.00000000==>22
 
 ```shell
 network:
@@ -13,8 +14,8 @@ network:
         enp0s8:
             dhcp4: false
             dhcp6: false                        
-            addresses: [10.86.16.50/24]
-            gateway4:  10.86.16.1
+            addresses: [10.**.**.22/22]
+            gateway4:  10.**.**.1
             nameservers:
                 addresses: [114.114.114.114, 8.8.8.8]
 ```
