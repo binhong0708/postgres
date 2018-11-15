@@ -8,7 +8,7 @@ rename file to “slave1_mysql_server.vdi”
 
 Step2. If we direct config a exists vdi file ,it will raiser error like below
 
-![2_show_error](.\images\20181114\2_show_error.png)
+![2_show_error](.\images\20181114\2_show_error.jpg)
 
 
 
@@ -18,19 +18,19 @@ Open cmd.exe with administrator:
 
 D:\Program Files\Oracle\VirtualBox>VBoxManage.exe internalcommands sethduuid D:\software\Linux\slave1_mysql_server.vdi
 
-![3_sethduuid](.\images\20181114\3_sethduuid.png)
+![3_sethduuid](.\images\20181114\3_sethduuid.jpg)
 
 
 
 Step4.  Add vdi file to “Oracle VM”
 
-![4_add_file.png](.\images\20181114\4_add_file.png)
+![4_add_file](.\images\20181114\4_add_file.jpg)
 
 
 
 Step5.   Start the new virtual machine “slave1_mysql_server”
 
-![5_start_virtual_machine.png](.\images\20181114\5_start_virtual_machine.png)
+![5_start_virtual_machine](.\images\20181114\5_start_virtual_machine.jpg)
 
 
 
@@ -52,7 +52,7 @@ Modify hostname
 
 \# vi /etc/hostname
 
-![7_vi_host.png](.\images\20181114\7_vi_host.png)
+![7_vi_host](.\images\20181114\7_vi_host.jpg)
 
 
 
