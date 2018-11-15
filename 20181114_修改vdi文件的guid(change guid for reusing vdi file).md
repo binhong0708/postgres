@@ -2,13 +2,13 @@ Step1. Copy VDI file from “D:\VirtualBox
 VMs\master_mysql_server\ master_mysql_server.vdi” to “D:\software\Linux” ,and
 rename file to “slave1_mysql_server.vdi”
 
-![1_path](.\images\20181114\1_path.jpg)
+![1_path](./images/20181114/1_path.jpg)
 
 
 
 Step2. If we direct config a exists vdi file ,it will raiser error like below
 
-![2_show_error](.\images\20181114\2_show_error.jpg)
+![2_show_error](./images/20181114/2_show_error.jpg)
 
 
 
@@ -18,19 +18,19 @@ Open cmd.exe with administrator:
 
 D:\Program Files\Oracle\VirtualBox>VBoxManage.exe internalcommands sethduuid D:\software\Linux\slave1_mysql_server.vdi
 
-![3_sethduuid](.\images\20181114\3_sethduuid.jpg)
+![3_sethduuid](./images/20181114/3_sethduuid.jpg)
 
 
 
 Step4.  Add vdi file to “Oracle VM”
 
-![4_add_file](.\images\20181114\4_add_file.jpg)
+![4_add_file](./images/20181114/4_add_file.jpg)
 
 
 
 Step5.   Start the new virtual machine “slave1_mysql_server”
 
-![5_start_virtual_machine](.\images\20181114\5_start_virtual_machine.jpg)
+![5_start_virtual_machine](./images/20181114/5_start_virtual_machine.jpg)
 
 
 
@@ -38,7 +38,7 @@ Step6.  Login “slave1_mysql_server”
 
 You will find the hostname still not changed, we need change the hostname now.
 
-![6_still_not_change_hostname.png](.\images\20181114\6_still_not_change_hostname.png)
+![6_still_not_change_hostname.png](./images/20181114/6_still_not_change_hostname.png)
 
 Step7. vi hosts
 
@@ -52,7 +52,7 @@ Modify hostname
 
 \# vi /etc/hostname
 
-![7_vi_host](.\images\20181114\7_vi_host.jpg)
+![7_vi_host](./images/20181114/7_vi_host.jpg)
 
 
 
