@@ -38,7 +38,7 @@ Step6.  Login “slave1_mysql_server”
 
 You will find the hostname still not changed, we need change the hostname now.
 
-![6_still_not_change_hostname.png](./images/20181114/6_still_not_change_hostname.png)
+![6_still_not_change_hostname.jpg](./images/20181114/6_still_not_change_hostname.jpg)
 
 Step7. vi hosts
 
