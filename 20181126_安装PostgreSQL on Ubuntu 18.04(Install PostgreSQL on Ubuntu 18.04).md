@@ -63,7 +63,7 @@ In this article, we are going to show you how to install **PostgreSQL 10** datab
 # \conninfo
 ```
 
-![1_conninfo](./images/20181116_2/1_conninfo.jpg)
+![1_conninfo](./images/20181126/1_conninfo.jpg)
 
 – Change the password of postgres role
 
@@ -77,13 +77,13 @@ In this article, we are going to show you how to install **PostgreSQL 10** datab
 
 \# \l
 
-​                           ![2_list](./images/20181116_2/2_list.jpg)                       
+​                           ![2_list](./images/20181126/2_list.jpg)                       
 
 – Connect to a database:
 
 \# \c database_name
 
-​                              ![3_c_db](./images/20181116_2/3_c_db.jpg)
+​                              ![3_c_db](./images/20181126/3_c_db.jpg)
 
  
 
@@ -93,7 +93,7 @@ In this article, we are going to show you how to install **PostgreSQL 10** datab
 # \dt
 ```
 
-​                              ![4_desc](./images/20181116_2/4_desc.jpg)
+​                              ![4_desc](./images/20181126/4_desc.jpg)
 
 – Create database
 
@@ -101,7 +101,7 @@ In this article, we are going to show you how to install **PostgreSQL 10** datab
 # create database test;
 ```
 
-​                            ![5_dt](./images/20181116_2/5_dt.jpg)
+​                            ![5_dt](./images/20181126/5_dt.jpg)
 
 --Create table
 
@@ -115,7 +115,7 @@ In this article, we are going to show you how to install **PostgreSQL 10** datab
 # );
 ```
 
-​                              ![6_insert](./images/20181116_2/6_insert.jpg)
+​                              ![6_insert](./images/20181126/6_insert.jpg)
 
 --Insert into data 
 
@@ -123,7 +123,7 @@ In this article, we are going to show you how to install **PostgreSQL 10** datab
 # insert into t1(id,name,content,create_date,create_time) values(1,'hongdou','SSIS Error Code DTS_E_PROCESSINPUTFAILED. ',current_date,current_time);
 ```
 
-​                              ![7_select](./images/20181116_2/7_select.jpg)
+​                              ![7_select](./images/20181126/7_select.jpg)
 
 --Query data
 
@@ -131,7 +131,7 @@ In this article, we are going to show you how to install **PostgreSQL 10** datab
 
  
 
-​                              ![7_select](./images/20181116_2/7_select.jpg)
+​                              ![7_select](./images/20181126/7_select.jpg)
 
  
 
@@ -171,7 +171,7 @@ $ vi pg_hba.conf
 
    
 
-​                            ![8_hba_conf](./images/20181116_2/8_hba_conf.jpg)
+​                            ![8_hba_conf](./images/20181126/8_hba_conf.jpg)
 
  
 
@@ -200,7 +200,7 @@ $ psql -U postgres -W test
 
    
 
-​                            ![9_con_db](./images/20181116_2/9_con_db.jpg)
+​                            ![9_con_db](./images/20181126/9_con_db.jpg)
 
 # Step 6:Secure Remote PostgreSQL With pgAdmin
 
@@ -210,7 +210,7 @@ PostgreSQL listens for connections on localhost and it is not advised to reconfi
 
 Visit the [pgAdmin download page](https://www.pgadmin.org/download/windows4.php) to obtain the most recent version of the program. Save the installer to your desktop and launch it. You’ll be greeted with the following screen; click “Next” to continue.
 
-​                              ![10_install_pgadmin](./images/20181116_2/10_install_pgadmin.jpg)
+​                              ![10_install_pgadmin](./images/20181126/10_install_pgadmin.jpg)
 
  
 
@@ -220,17 +220,17 @@ While PostgreSQL supports SSL connections, it is not advisable to instruct it to
 
  
 
-​                            ![11_putty_conn](./images/20181116_2/11_putty_conn.jpg)
+​                            ![11_putty_conn](./images/20181126/11_putty_conn.jpg)
 
    
 
 Open the “Connection -> SSH -> Tunnels” screen. Enter “5433” in the “Source port” field. Although PostgreSQL uses 5432 for TCP connections, you’ll want to specify 5433 as the port number in case you decide to install PostgreSQL locally later on. Enter “127.0.0.1:5432” in the “Destination” field, and click the “Add” button.
 
-​                              ![12_putty_transfer](./images/20181116_2/12_putty_transfer.jpg)
+​                              ![12_putty_transfer](./images/20181126/12_putty_transfer.jpg)
 
 The “Forwarded ports” list should now contain an entry like the one shown below.
 
-​                              ![13_putty_forwarding](./images/20181116_2/13_putty_forwarding.jpg)
+​                              ![13_putty_forwarding](./images/20181126/13_putty_forwarding.jpg)
 
  
 
@@ -248,7 +248,7 @@ If the fingerprints match, click “Yes” to accept the warning and cache this 
 
 You may log into your Linode with any user account you have configured on it. Next, you’ll use pgAdmin to connect to PostgreSQL through the tunnel.
 
-​              ![14_last_putty](./images/20181116_2/14_last_putty.jpg)
+​              ![14_last_putty](./images/20181126/14_last_putty.jpg)
 
  
 
@@ -264,7 +264,7 @@ Launch pgAdmin and you’ll be presented with a default view containing no serve
 
  
 
-​                              ![15_pgadmin_conn](./images/20181116_2/15_pgadmin_conn.jpg)
+​                              ![15_pgadmin_conn](./images/20181126/15_pgadmin_conn.jpg)
 
  
 
